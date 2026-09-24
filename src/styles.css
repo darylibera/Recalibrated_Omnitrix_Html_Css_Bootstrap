@@ -6,6 +6,11 @@
         align-items: center;
         background-color: black;
       }
+      @media (max-width: 430px) {
+        .WatchSection{
+          height: 90vh;
+        }
+    }
       .watch {
         height: 495px;
         min-width: 350px;
