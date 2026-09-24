@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnitrix | About</title>
+    <title>Omnitrix</title>
 
-    <link rel="stylesheet" href="./src/site.css" />
+    <!-- boot -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <!-- style -->
+
+     <link rel="stylesheet" href="./src/site.css" />
+<!-- animation.css -->
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <header class="site-nav">
@@ -37,7 +47,7 @@
           <span class="hero-badge"> ABOUT THE OMNITRIX </span>
           <h1>
             THE
-            <span>OMNITRIX</span>
+            <span class="animate__animated animate__flash">OMNITRIX</span>
           </h1>
           <p>
             The Omnitrix is a wearable, high-density biometric alteration device
@@ -67,6 +77,28 @@
               unnecessary
             </p>
             <a href="Omnitrix.html" class="main-button"> USE OMNITRIX </a>
+            <!-- Button trigger modal -->
+            <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#userGuide">
+              USER GUIDE
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="userGuide" tabindex="-1" aria-labelledby="userGuideLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black border border-success">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-green " id="userGuideLabel">Omnitrix Guide</h1>
+                    <button type="button" class="btn-close bg-green" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="w-100 rounded" src="./assets/Guide.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             
+
           </div>
 
           <div class="stats-grid">
@@ -131,4 +163,5 @@
       <div class="copyright">&copy; 2026 Omnitrix. All rights reserved</div>
     </footer>
   </body>
+  
 </html>

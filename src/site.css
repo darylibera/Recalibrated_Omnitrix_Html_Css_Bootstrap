@@ -28,6 +28,13 @@ a {
   --text: #ffffff;
   --muted: #999999;
 }
+.text-green {
+  color: var(--green);
+}
+.bg-green{
+    background-color: rgb(105, 251, 0);
+
+}
 
 .site-nav {
   position: fixed;
@@ -155,13 +162,16 @@ a {
 
 .main-button {
   background: var(--green);
+  padding: 10px;
   color: black;
+  border: none;
+  border-radius: 5px;
 }
 
 .main-button:hover {
   color: black;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(171, 251, 0, 0.25);
+  box-shadow: 0 8px 30px rgba(171, 251, 0, 0.25);
 }
 
 .outline-button {
