@@ -200,7 +200,7 @@ a {
 }
 
 .feature-card:hover {
-  border-color: var(--green);
+  box-shadow: inset 0px 0px 20px rgba(85, 128, 0, 0.519);
   transform: translateY(-5px);
 }
 
@@ -337,12 +337,11 @@ a {
 
 .stat-card:hover {
   border-color: rgba(171, 251, 0, 0.25);
-  box-shadow: 0px 0px 8px rgba(171, 251, 0, 0.25);
+  box-shadow: inset 0px 0px 15px rgba(171, 251, 0, 0.25);
   transform: translateY(-5px);
 }
 
 .dark-section {
-  max-width: none;
   background: #090909;
 }
 
@@ -351,9 +350,91 @@ a {
   margin: auto;
   grid-template-columns: repeat(4, 1fr);
 }
+.alien-ddl{
+  background: #000;
+  border:  none;
+  color: var(--green);
+  margin: 20px;
+}
+.alien-ddl-button{
+  background: #000;
+  color: var(--green);
+  border: none;
+  box-shadow: inset 0px 0px 10px green;
+  border-radius: 6px;
+  padding: 8px 5px;
+  transition: 0.35s ;
+ }
+.alien-ddl-button:hover{
+  box-shadow: inset 0px 0px 10px rgb(128, 0, 0);
+  color: rgb(247, 4, 4);
+  transform: scale(1.03);
+}
+
+.alien-ddl-button:hover >div img{
+    animation: rotate 2s linear infinite;
+
+}
 
 
+.alien-ddl-button>div{
+ max-height: 30px;
+ object-fit: contain;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.alien-ddl-button>h3{
+   margin: 0px;
+   font-size: clamp(2px, 5vw, 18px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.alien-ddl-button>div img{
+  width: 28px;
+}
+.ddl-body-img{
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
 
+.ddl-body-img img{
+  max-height: 250px;
+  max-width: 150px;
+}
+.accordion-body{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+.ddl-body-text{
+  max-width: 300px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-size: clamp(8px, 5vw, 15px);
+  line-height: 20px;
+}
+.ddl-body-text span{
+font-weight: 700;
+}
+@media (max-width:434px){
+  .accordion-body{
+    flex-direction: column;
+  }
+}
 .login-section {
   min-height: 100vh;
   display: flex;

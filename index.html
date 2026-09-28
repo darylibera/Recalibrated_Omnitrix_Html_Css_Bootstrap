@@ -7,18 +7,46 @@
     <title>Omnitrix</title>
 
     <!-- boot -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
- <!-- style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-     <link rel="stylesheet" href="./src/site.css" />
-<!-- animation.css -->
- <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <!-- style -->
+
+    <link rel="stylesheet" href="./src/site.css" />
+    <!-- animation.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
-  <body>  
+  <body>
     <header class="site-nav">
       <div class="nav-container">
         <a href="index.html" class="logo"> OMNITRIX </a>
@@ -39,11 +67,11 @@
           </ul>
         </nav>
       </div>
-    </header> 
+    </header>
     <main>
       <section class="about-hero">
         <div class="about-content">
-          <span class="hero-badge"> ABOUT THE OMNITRIX </span>
+          <span class="hero-badge "> ABOUT THE OMNITRIX </span>
           <h1>
             THE
             <span class="animate__animated animate__flash">OMNITRIX</span>
@@ -73,47 +101,67 @@
               The main Omnitrix page contains the interactive carousel, while
               the surrounding pages provide a complete website experience with
               navigation, information, and login access the login is completely
-              unnecessary
+              empty and it's optional
             </p>
             <a href="Omnitrix.html" class="main-button"> USE OMNITRIX </a>
             <!-- Button trigger modal -->
-            <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#userGuide">
+            <button
+              type="button"
+              class="main-button"
+              data-bs-toggle="modal"
+              data-bs-target="#userGuide"
+              
+            >
               USER GUIDE
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="userGuide" tabindex="-1" aria-labelledby="userGuideLabel" aria-hidden="true">
+            <div
+              class="modal fade"
+              id="userGuide"
+              tabindex="-1"
+              aria-labelledby="userGuideLabel"
+              aria-hidden="true"
+            >
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-black border border-success">
                   <div class="modal-header border-bottom-1 border-success">
-                    <h1 class="modal-title fs-5 text-green " id="userGuideLabel">Omnitrix Guide</h1>
-                    <button type="button" class="btn-close bg-green" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5 text-green" id="userGuideLabel">
+                      Omnitrix Guide
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close bg-green"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
                   <div class="modal-body">
-                    <img class="w-100 rounded" src="./assets/Guide.jpeg" alt="">
+                    <img
+                      class="w-100 rounded"
+                      src="./assets/Guide.jpeg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
             </div>
-
-             
-
           </div>
 
           <div class="stats-grid">
-            <div class="stat-card">
+            <div class="stat-card" data-aos="fade-right">
               <strong>19</strong>
               <span> Alien Forms (Temp) </span>
             </div>
-            <div class="stat-card">
+            <div class="stat-card" data-aos="fade-left">
               <strong>01</strong>
               <span> Recalibrated Omnitrix </span>
             </div>
-            <div class="stat-card">
+            <div class="stat-card" data-aos="fade-right">
               <strong>03</strong>
               <span> Website Pages </span>
             </div>
-            <div class="stat-card">
+            <div class="stat-card" data-aos="fade-left">
               <strong>&infin;</strong>
               <span> Transformations (Future Updations) </span>
             </div>
@@ -132,7 +180,9 @@
           </article>
           <article class="feature-card">
             <h3>About</h3>
-            <p>Learn more about the Ben10 original Aliens names and abilities </p>
+            <p>
+              Learn more about the Ben10 original Aliens names and abilities
+            </p>
           </article>
           <article class="feature-card">
             <h3>Omnitrix</h3>
@@ -144,13 +194,703 @@
           </article>
         </div>
       </section>
+      <section class="section dark-section bg-black">
+        <div class="section-heading">
+          <span>ABOUT</span>
+          <h2>Alien Info</h2>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <!-- Heatblast -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <h3>Heat Blast</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Heatblast_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Pyronite <br />
+                  <span>HOMEWORLD:</span> Pyros <br />
+                  <span>CODENAME:</span> Heatblast <br />
+                  <span>POWERS:</span> Fire Manipulation, Heat Manipulation,
+                  Flight. <br />
+                  <span>WEAKNESS:</span> Water, Extreme Cold.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wildmutt -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <h3>Wildmutt</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Wildmutt_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Vulpimancer <br />
+                  <span>HOMEWORLD:</span> Vulpin <br />
+                  <span>CODENAME:</span> Wildmutt <br />
+                  <span>POWERS:</span> Super Strength, Enhanced Agility,
+                  Enhanced Senses. <br />
+                  <span>WEAKNESS:</span> Lack of Eyesight, Strong Odors.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diamondhead -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <h3>Diamondhead</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Diamondhead_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Petrosapien <br />
+                  <span>HOMEWORLD:</span> Petropia <br />
+                  <span>CODENAME:</span> Diamondhead <br />
+                  <span>POWERS:</span> Crystal Manipulation, Super Strength,
+                  Durability. <br />
+                  <span>WEAKNESS:</span> Sonic Attacks, Extreme Vibrations.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- XLR8 -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <h3>XLR8</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/XLR8_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Kineceleran <br />
+                  <span>HOMEWORLD:</span> Kinet <br />
+                  <span>CODENAME:</span> XLR8 <br />
+                  <span>POWERS:</span> Super Speed, Enhanced Reflexes,
+                  Accelerated Thinking. <br />
+                  <span>WEAKNESS:</span> Slippery Surfaces.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grey Matter -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <h3>Grey Matter</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/GreyMatter_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Galvan <br />
+                  <span>HOMEWORLD:</span> Galvan Prime <br />
+                  <span>CODENAME:</span> Grey Matter <br />
+                  <span>POWERS:</span> Super Intelligence, Enhanced Dexterity,
+                  Small Size. <br />
+                  <span>WEAKNESS:</span> Small Size, Low Physical Strength.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Four Arms -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <h3>Four Arms</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/FourArms_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Tetramand <br />
+                  <span>HOMEWORLD:</span> Khoros <br />
+                  <span>CODENAME:</span> Four Arms <br />
+                  <span>POWERS:</span> Super Strength, Super Jumping, Shockwave
+                  Generation. <br />
+                  <span>WEAKNESS:</span> Limited Agility, Electricity.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stinkfly -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                <h3>Stinkfly</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Stinkfly_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Lepidopterran <br />
+                  <span>HOMEWORLD:</span> Lepidopterra <br />
+                  <span>CODENAME:</span> Stinkfly <br />
+                  <span>POWERS:</span> Flight, Acid Secretion, Enhanced Agility.
+                  <br />
+                  <span>WEAKNESS:</span> Fragile Wings, Fire.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ripjaws -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                <h3>Ripjaws</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Ripjaws_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Piscciss Volann <br />
+                  <span>HOMEWORLD:</span> Piscciss <br />
+                  <span>CODENAME:</span> Ripjaws <br />
+                  <span>POWERS:</span> Underwater Breathing, Super Swimming,
+                  Enhanced Strength. <br />
+                  <span>WEAKNESS:</span> Dry Environments, Lack of Water.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upgrade -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+              >
+                <h3>Upgrade</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseNine"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Upgrade_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Galvanic Mechamorph <br />
+                  <span>HOMEWORLD:</span> Galvan B <br />
+                  <span>CODENAME:</span> Upgrade <br />
+                  <span>POWERS:</span> Technopathy, Technology Fusion, Energy
+                  Beams. <br />
+                  <span>WEAKNESS:</span> Electromagnetic Interference.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ghostfreak -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTen"
+                aria-expanded="false"
+                aria-controls="collapseTen"
+              >
+                <h3>Ghostfreak</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseTen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Ghostfreak_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Ectonurite <br />
+                  <span>HOMEWORLD:</span> Anur Phaetos <br />
+                  <span>CODENAME:</span> Ghostfreak <br />
+                  <span>POWERS:</span> Intangibility, Invisibility, Possession,
+                  Levitation. <br />
+                  <span>WEAKNESS:</span> Light, Fire.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cannonbolt -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEleven"
+                aria-expanded="false"
+                aria-controls="collapseEleven"
+              >
+                <h3>Cannonbolt</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseEleven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Cannonbolt_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Arburian Pelarota <br />
+                  <span>HOMEWORLD:</span> Arburia <br />
+                  <span>CODENAME:</span> Cannonbolt <br />
+                  <span>POWERS:</span> Super Durability, Rolling, Super
+                  Strength. <br />
+                  <span>WEAKNESS:</span> Limited Mobility While Rolled.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wildvine -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwelve"
+                aria-expanded="false"
+                aria-controls="collapseTwelve"
+              >
+                <h3>Wildvine</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseTwelve"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Wildvine_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Florauna <br />
+                  <span>HOMEWORLD:</span> Flors Verdance <br />
+                  <span>CODENAME:</span> Wildvine <br />
+                  <span>POWERS:</span> Plant Manipulation, Regeneration,
+                  Stretching. <br />
+                  <span>WEAKNESS:</span> Fire, Extreme Cold.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benwolf -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThirteen"
+                aria-expanded="false"
+                aria-controls="collapseThirteen"
+              >
+                <h3>Benwolf</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseThirteen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Benwolf_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Loboan <br />
+                  <span>HOMEWORLD:</span> Luna Lobo <br />
+                  <span>CODENAME:</span> Benwolf <br />
+                  <span>POWERS:</span> Sonic Howl, Super Strength, Enhanced
+                  Agility. <br />
+                  <span>WEAKNESS:</span> Sonic Recoil.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benmummy -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFourteen"
+                aria-expanded="false"
+                aria-controls="collapseFourteen"
+              >
+                <h3>Benmummy</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseFourteen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Benmummy_DDL.png" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Thep Khufan <br />
+                  <span>HOMEWORLD:</span> Anur Khufos <br />
+                  <span>CODENAME:</span> Benmummy <br />
+                  <span>POWERS:</span> Super Strength, Regeneration, Elasticity.
+                  <br />
+                  <span>WEAKNESS:</span> Fire, Extreme Heat.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benvicktor -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFifteen"
+                aria-expanded="false"
+                aria-controls="collapseFifteen"
+              >
+                <h3>Benvicktor</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseFifteen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Benvicktor_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Transylian <br />
+                  <span>HOMEWORLD:</span> Transylia <br />
+                  <span>CODENAME:</span> Benvicktor <br />
+                  <span>POWERS:</span> Electricity Absorption, Energy Blasts,
+                  Super Strength. <br />
+                  <span>WEAKNESS:</span> Overloading, Electrical Disruption.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upchuck -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSixteen"
+                aria-expanded="false"
+                aria-controls="collapseSixteen"
+              >
+                <h3>Upchuck</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseSixteen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Upchuck_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Gourmand <br />
+                  <span>HOMEWORLD:</span> Peptos XI <br />
+                  <span>CODENAME:</span> Upchuck <br />
+                  <span>POWERS:</span> Matter Consumption, Explosive Vomit,
+                  Super Strength. <br />
+                  <span>WEAKNESS:</span> Overeating.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ditto -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeventeen"
+                aria-expanded="false"
+                aria-controls="collapseSeventeen"
+              >
+                <h3>Ditto</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseSeventeen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/Ditto_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Splixson <br />
+                  <span>HOMEWORLD:</span> Hathor <br />
+                  <span>CODENAME:</span> Ditto <br />
+                  <span>POWERS:</span> Duplication, Shared Consciousness,
+                  Enhanced Agility. <br />
+                  <span>WEAKNESS:</span> Shared Pain, Duplication Limitations.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eye Guy -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEighteen"
+                aria-expanded="false"
+                aria-controls="collapseEighteen"
+              >
+                <h3>Eye Guy</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseEighteen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/EyeGuy_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> Opticoid <br />
+                  <span>HOMEWORLD:</span> Sightra <br />
+                  <span>CODENAME:</span> Eye Guy <br />
+                  <span>POWERS:</span> Energy Beams, Enhanced Vision, Super
+                  Strength. <br />
+                  <span>WEAKNESS:</span> Eye Vulnerability.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Way Big -->
+          <div class="accordion-item alien-ddl">
+            <h2 class="accordion-header">
+              <button
+                class="d-flex justify-content-between align-items w-100 px-3 alien-ddl-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNineteen"
+                aria-expanded="false"
+                aria-controls="collapseNineteen"
+              >
+                <h3>Way Big</h3>
+                <div><img src="./assets/logo.png" alt="" /></div>
+              </button>
+            </h2>
+            <div
+              id="collapseNineteen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="ddl-body-img">
+                  <img src="./assets/WayBig_DDL.webp" alt="" />
+                </div>
+                <div class="ddl-body-text">
+                  <span>SPECIES:</span> To'kustar <br />
+                  <span>HOMEWORLD:</span> Khoros <br />
+                  <span>CODENAME:</span> Way Big <br />
+                  <span>POWERS:</span> Super Strength, Super Speed, Cosmic Ray
+                  Generation. <br />
+                  <span>WEAKNESS:</span> Large Size, Limited Mobility.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
     <footer class="site-footer">
       <div class="footer-container">
         <div>
-          <a href="./index.html" class="footer-logo">          
-            OMNITRIX
-          </a>
+          <a href="./index.html" class="footer-logo"> OMNITRIX </a>
           <p>The ultimate transformation</p>
         </div>
         <div class="footer-links">
@@ -164,5 +904,7 @@
       <div class="copyright">&copy; 2026 Omnitrix. All rights reserved</div>
     </footer>
   </body>
-  
+  <script>
+  AOS.init();
+</script>
 </html>
