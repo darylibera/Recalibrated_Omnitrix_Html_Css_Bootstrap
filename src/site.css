@@ -28,6 +28,23 @@ a {
   --text: #ffffff;
   --muted: #999999;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(33, 180, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(180, 0, 0);
+}
 .text-green {
   color: var(--green);
 }
@@ -354,6 +371,7 @@ a {
 }
 .ddl-body-img{
   max-height: 300px;
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,9 +405,12 @@ a {
 .ddl-body-text span{
 font-weight: 700;
 }
-@media (max-width:434px){
+@media (max-width:479px){
   .accordion-body{
     flex-direction: column;
+  }
+  .ddl-body-img img{
+    max-width: 200px;
   }
 }
 .login-section {
@@ -582,7 +603,7 @@ font-weight: 700;
     padding-left: 15px;
     padding-right: 15px;
   }
-  
+
   .logo {
     font-size: 18px;
 
@@ -643,21 +664,4 @@ font-weight: 700;
   .login-box {
     padding: 28px 20px;
   }
-}
-
-html,
-body {
-  width: 100%;
-  min-width: 100%;
-}
-
-main {
-  width: 100%;
-}
-
-.section,
-.about-hero,
-.site-footer {
-  width: 100%;
-  max-width: none;
 }
